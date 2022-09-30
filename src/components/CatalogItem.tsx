@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addProductToCart } from '../store/modules/cart/actions'
+import { addProductToCartRequest } from '../store/modules/cart/actions'
 import { IProduct } from '../store/modules/cart/types'
 
 interface ICatalogItemProps {
@@ -11,7 +11,7 @@ export const CatalogItem: React.FC<ICatalogItemProps> = ({ product }) => {
   const dispatch = useDispatch()
 
   const handleAddProductToCart = () => {
-    dispatch(addProductToCart(product))
+    dispatch(addProductToCartRequest(product))
   }
 
   return (
