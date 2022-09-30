@@ -1,4 +1,4 @@
-# Bonus Redux Project
+# Redux Project
 
 A simple project using Redux + Redux Saga.
 
